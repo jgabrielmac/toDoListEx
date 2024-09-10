@@ -46,9 +46,10 @@ export default function HomeScreen(): JSX.Element {
       style={{
         backgroundColor: backgroundColorStorage,
         flex: 1,
+        paddingHorizontal: 20,
       }}>
       <Header setShowModal={setShowModal} />
-      <View style={{ width: "90%", alignSelf: "center" }}>
+      <View style={{}}>
         <View style={styles.inputContainer}>
           <View style={{ flex: 1 }}>
             <Input
@@ -79,10 +80,14 @@ export default function HomeScreen(): JSX.Element {
           </TouchableOpacity>
         </View>
         <FlatList
-          contentContainerStyle={{
-            backgroundColor: "#FBFFFF",
-            borderRadius: 7,
-            marginVertical: 12,
+          style={{
+            shadowColor: "#171717",
+            shadowOffset: { width: 0, height: 0 },
+            shadowOpacity: 0.3,
+            shadowRadius: 4,
+            paddingHorizontal: 8,
+            elevation: 5,
+            paddingTop: 18,
           }}
           data={list}
           renderItem={({ item }) => (

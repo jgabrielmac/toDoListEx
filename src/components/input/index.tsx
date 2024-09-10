@@ -47,6 +47,7 @@ const Input: React.FC<InputComponentProps> = ({
                   shadowOffset: { width: 0, height: 0 },
                   shadowOpacity: 0.2,
                   shadowRadius: 4,
+                  elevation: 5,
                 }
               }
               maxLength={maxLength}

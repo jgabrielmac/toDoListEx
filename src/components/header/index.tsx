@@ -23,10 +23,11 @@ export default function Header({
         alignItems: "center",
         paddingTop: 12,
         paddingBottom: -12,
+        paddingHorizontal: 8,
       }}>
       <View
         style={{
-          width: "90%",
+          width: "100%",
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",

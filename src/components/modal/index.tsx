@@ -35,8 +35,7 @@ export default function ConfigModal({
             <TouchableOpacity
               onPress={() => {
                 setShowModal(false);
-              }}
-            >
+              }}>
               <AntDesign name="closecircle" size={27} />
             </TouchableOpacity>
           </View>
@@ -58,13 +57,12 @@ export default function ConfigModal({
               },
             }}
             label="Cor de fundo"
-            activeOutlineColor={backgroundColorStorage}
+            activeOutlineColor="#DEDEDE"
             errors={errors}
           />
           <TouchableOpacity
             onPress={handleSubmit(onSubmit)}
-            style={styles.saveContainer}
-          >
+            style={styles.saveContainer}>
             <Text style={{ fontWeight: "bold" }}>Salvar</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={onExit} style={styles.exitContainer}>
